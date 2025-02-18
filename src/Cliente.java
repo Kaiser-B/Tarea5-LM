@@ -8,4 +8,12 @@ public class Cliente {
         this.nombre = nombre;
         this.id = id;
     }
+
+    public boolean isEsVip() {
+        return esVip;
+    }
+
+    public void setEsVip(boolean esVip) {
+        this.esVip = esVip;
+    }
 }
