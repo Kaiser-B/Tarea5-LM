@@ -8,7 +8,7 @@ public class Pedido {
 
     public void procesarPedido(double total) {
         if (total > 100){
-            double descuento = calcularDescuento();
+            double descuento = total * calcularDescuento();
             double precioFinal = total - descuento;
             System.out.println("Pedido aprobado. Total: " + precioFinal + " (descuento aplicado: " + descuento + ")");
         } else {
